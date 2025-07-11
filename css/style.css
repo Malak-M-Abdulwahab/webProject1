@@ -66,42 +66,42 @@ body{
 
 .header-info .header-info-contact:hover p::after{
     width: 86px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .header-info .header-info-blog:hover p::after{
     width: 35px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .header-info .header-info-team:hover p::after{
     width: 40px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .header-info .header-info-prices:hover p::after{
     width: 48px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .header-info .header-info-services:hover p::after{
     width: 64px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .header-info .header-info-portfolio:hover p::after{
     width: 65px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .header-info .header-info-about:hover p::after{
     width: 45px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .header-info .header-info-home:hover p::after{
     width: 42px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .header-search{
