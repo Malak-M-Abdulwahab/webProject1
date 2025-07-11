@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body{
+    height: 4500px;
+}
+
+/* /////////////////////// HEADER //////////////////////// */
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(251, 80, 145, 0.5);
+    top:0;
+    position: fixed;
+}
+
+.header-logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    float: left;
+}
+
+.header-info{
+    float: right;
+    list-style: none;
+    margin: 13px;
+    margin-right: 15px;
+}
+
+.header-info li{
+    display: inline;
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-right: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.header-search{
+    height: 30px;
+    width: 200px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+.header-search-logo{
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-left: 15px;
+}
+
+.header-input{
+    height: 100%;
+    width: 140px;
+    border: none;
+    float: right;
+    margin-right: 15px;
+}
+
+/* //////////////////// HEADER ////////////////////// */
+
+.start{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/flower-background.jfif);
+}
