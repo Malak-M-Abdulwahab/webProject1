@@ -9,7 +9,8 @@ body{
     height: 4500px;
 }
 
-/* ///////////////////////// HEADER ////////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+/* /////////////////////////// HEADER //////////////////////////// */
 
 .header{
     width: 100%;
@@ -51,22 +52,33 @@ body{
     color: white;
 }
 
-.header-info-blog-dropdown div li{
-    display: inline;
-    color: black;
-}
-
-.header-info-blog-dropdown div{
-    display: block;
-    float: none;
-    margin-top: 10px;
-}
-
 .header-info p{
     position: relative;
 }
 
-.header-info .header-info-blog-dropdown{
+.header-info p::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgb(162, 0, 70);
+    left: 0;
+    margin-top: 5px;
+}
+
+.header-info-blog{
+    height: 30px;
+}
+
+.header-info-blog-dropdown p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.header-info-blog-dropdown{
     position: relative;
     display: block;
     cursor: default;
@@ -85,37 +97,11 @@ body{
     opacity: 0;
 }
 
-.header-info p::after{
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 2px;
-    background-color: rgb(162, 0, 70);
-    left: 0;
-    margin-top: 5px;
-}
-
-.header-info-blog-dropdown div::after{
-    visibility: hidden;
-    opacity: 0;
-}
-
-.header-info-blog{
-    height: 30px;
-}
-
 .header-info .header-info-blog:hover .header-info-blog-dropdown::after{
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
 }
-
-.header-info .header-info-blog:hover .header-info-blog-dropdown div::after{
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-}
-
 
 .header-info .header-info-contact:hover p::after{
     width: 86px;
@@ -197,9 +183,9 @@ body{
     margin-right: 15px;
 }
 
-/* /////////////////////// END HEADER //////////////////////// */
-/* /////////////////////////////////////////////////////////// */
-/* ////////////////////////// MAIN /////////////////////////// */
+/* ///////////////////////// END HEADER ////////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+/* //////////////////////////// MAIN ///////////////////////////// */
 
 .main{
     width: 100%;
@@ -260,4 +246,61 @@ body{
 .main-button2{
     background-color: rgb(225, 87, 133);
     color: white;
+}
+
+/* ////////////////////////// END MAIN /////////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+/* ////////////////////////// WELCOMES /////////////////////////// */
+
+.welcome{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    padding-top: 60px;
+}
+
+.welcome-header{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.welcome-underline{
+    height: 3px;
+    width: 100px;
+    margin: auto;
+    background-color: palevioletred;
+}
+
+.welcome-sections{
+    margin: auto;
+    width: 80%;
+    overflow: auto;
+    margin-top: 100px;
+}
+
+.welcome-sections div{
+    width: 25%;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: rgb(165, 42, 81);
+    float: left;
+    margin-left: 4%;
+    margin-right: 4.25%;
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-sections div i{
+    font-size: 28px;
+    color: palevioletred;
+}
+
+.welcome-sections div h2{
+    text-transform: capitalize;
+}
+
+.welcome-sections div p{
+    text-transform: uppercase;
 }
