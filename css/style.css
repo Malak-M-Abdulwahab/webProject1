@@ -279,7 +279,33 @@ body{
     margin-top: 100px;
 }
 
-.welcome-sections div{
+.welcome-section1{
+    width: 25%;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: rgb(165, 42, 81);
+    float: left;
+    margin-left: 4%;
+    margin-right: 4.25%;
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-section2{
+    width: 25%;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: rgb(165, 42, 81);
+    float: left;
+    margin-left: 4%;
+    margin-right: 4.25%;
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-section3{
     width: 25%;
     height: 200px;
     border: 2px solid;
@@ -299,8 +325,50 @@ body{
 
 .welcome-sections div h2{
     text-transform: capitalize;
+    margin-top: 10px;
 }
 
 .welcome-sections div p{
-    text-transform: uppercase;
+    text-transform: capitalize;
+    color: gray;
+    margin-top: 12px; 
+}
+
+.welcome-sections .welcome-read-more{
+    color: palevioletred;
+}
+
+.welcome-overlay{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.welcome-overlay::before{
+    position: absolute;
+    content: "";
+
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    color: rgb(85, 7, 37, 0.4);
+}
+
+.welcome-section1:hover .welcome-overlay::before{
+    height: 100%;
+    width: 100%;
+    transition: 2s;
+}
+
+.welcome-section2:hover .welcome-overlay::before{
+    height: 100%;
+    width: 100%;
+    transition: 2s;
+}
+
+.welcome-section3:hover .welcome-overlay::before{
+    height: 100%;
+    width: 100%;
+    transition: 2s;
 }
