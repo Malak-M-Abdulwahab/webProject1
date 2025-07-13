@@ -462,7 +462,7 @@ input{
     transition: 1s;
 }
 
-/* ////////////////////////// wELCOMES /////////////////////////// */
+/* //////////////////////// END WELCOMES ///////////////////////// */
 /* /////////////////////////////////////////////////////////////// */
 /* ////////////////////////// FEATURED /////////////////////////// */
 
@@ -630,5 +630,143 @@ input{
 }
 
 .featured-image6:hover .featured-overlay{
+    visibility: visible;
+}
+
+/* //////////////////////// END FEATURED ///////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+/* /////////////////////////// OFFER ///////////////////////////// */
+
+.offer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    padding: 0 100px;
+}
+
+.offer-header{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding-top: 40px;
+}
+
+.offer-underline{
+    height: 3px;
+    width: 100px;
+    margin: auto;
+    background-color: palevioletred;
+}
+
+.offer-container{
+    width: 100%;
+    height:500px;
+    margin: 20px 0;
+    position: relative;
+    overflow: auto;
+}
+
+.offer-container-top{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.offer-container-bottom{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.offer-container-top div{
+    height: 80%;
+    margin-top: 2%;
+    width: 25%;
+    margin-right: 12.25%;
+    display: inline;
+    float: left;
+}
+
+.offer-container-top .offer3{
+    margin-right: 0px;
+}
+
+.offer-container-bottom div{
+    height: 80%;
+    margin-top: 2%;
+    width: 25%;
+    margin-right: 12.25%;
+    display: inline;
+    float: left;
+}
+
+.offer-container-bottom .offer6{
+    margin-right: 0px;
+}
+
+.offer-container div div{
+    border: 2px solid palevioletred;
+    border-radius: 15px;
+}
+
+.offer-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(158, 12, 73, 0.5);
+    text-align: center;
+    top: 0px;
+    visibility: hidden;
+    margin-left: -2px;
+}
+
+.offer-overlay h2{
+    padding-top: 35px;
+    color: rgb(229, 229, 229);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.offer-overlay p{
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.offer-overlay i{
+    margin-top: 20px;
+    padding-top: 5px;
+    background-color: white;
+    color: gray;
+    font-size: 20px;
+    height: 27px;
+    width: 32px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.offer1:hover .offer-overlay{
+    visibility: visible;
+}
+
+.offer2:hover .offer-overlay{
+    visibility: visible;
+}
+
+.offer3:hover .offer-overlay{
+    visibility: visible;
+}
+
+.offer4:hover .offer-overlay{
+    visibility: visible;
+}
+
+.offer5:hover .offer-overlay{
+    visibility: visible;
+}
+
+.offer6:hover .offer-overlay{
     visibility: visible;
 }
