@@ -71,7 +71,7 @@ body{
 }
 
 .header-info-blog-dropdown div {
-    display: none;
+    visibility: hidden;
     position: absolute;
     width: 160px;
     height: 150px;
@@ -83,6 +83,8 @@ body{
     padding-left: 65px;
     cursor: default;
     box-shadow: 0px 0px 10px -5px rgb(0, 0, 0);
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .header-info-blog-dropdown p{
@@ -130,7 +132,9 @@ body{
 }
 
 .header-info-blog:hover .header-info-blog-dropdown div {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .header-info .header-info-contact:hover p::after{
@@ -140,21 +144,6 @@ body{
 
 .header-info .header-info-blog:hover .header-info-underline::after{
     width: 35px;
-    transition: 0.5s;
-}
-
-.header-info .header-info-blog-dropdown-scents:hover .header-info-underline-history::after{
-    width: 111px;
-    transition: 0.5s;
-}
-
-.header-info .header-info-blog-dropdown-ingredients:hover .header-info-underline-ingredients::after{
-    width: 86px;
-    transition: 0.5s;
-}
-
-.header-info .header-info-blog-dropdown-celebrity:hover .header-info-underline-celebrity::after{
-    width: 116px;
     transition: 0.5s;
 }
 
@@ -374,6 +363,7 @@ input{
 
 .welcome-sections .welcome-read-more{
     color: palevioletred;
+    cursor: pointer;
 }
 
 .welcome-overlay{
@@ -391,7 +381,6 @@ input{
     width: 0;
     background-color: rgba(141, 11, 61, 0.4);
     margin: -21px;
-    border-radius: 10px;
     z-index: -1;
 }
 
