@@ -66,28 +66,23 @@ body{
     margin-top: 5px;
 }
 
-.header-info-blog-dropdown .header-info-underline-blog{
-    position: relative;
-} 
-
-.header-info-blog-dropdown .header-info-underline-blog::after{
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 2px;
-    background-color: rgb(162, 0, 70);
-    left: 0;
-    margin-top: -35px;
-    z-index: 12;
-} 
-
 .header-info-blog{
     height: 30px;
 }
 
-.header-info-blog-dropdown div{
-    width: 100%;
-    height: 100%;
+.header-info-blog-dropdown div {
+    display: none;
+    position: absolute;
+    width: 160px;
+    height: 150px;
+    top: 40px;
+    margin-left: -80px;
+    background-color: white;
+    border-radius: 15px;
+    z-index: 100;
+    padding-left: 65px;
+    cursor: default;
+    box-shadow: 0px 0px 10px -5px rgb(0, 0, 0);
 }
 
 .header-info-blog-dropdown p{
@@ -99,47 +94,43 @@ body{
     position: relative;
     z-index: 11;
     margin-left: -50px;
-    margin-top: 40px;
+    margin-top: 25px;
+    cursor: pointer;
 }
 
-.header-info-blog-dropdown{
+.header-info .header-info-blog .header-info-blog-dropdown span{
     position: relative;
-    display: block;
-    cursor: default;
 }
 
-.header-info-blog-dropdown::before{
+.header-info .header-info-blog .header-info-blog-dropdown span::after{
     position: absolute;
     content: "";
-    width: 160px;
-    height: 180px;
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 10px;
-    margin-left: -60px;
-    visibility: hidden;
-    opacity: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(162, 0, 70);
+    left: 0;
+    margin-top: 5px;
+    margin-left: -50px;
+    z-index: 200;
 }
 
-.header-info-blog-dropdown-scents:hover .header-info-underline-blog::after{
-    width: 86px;
+.header-info .header-info-blog .header-info-blog-dropdown .a:hover span::after{
+    width: 112px;
     transition: 0.5s;
-} 
+}
 
-.header-info-blog-dropdown-ingredients:hover .header-info-underline-blog::after{
-    width: 86px;
+.header-info .header-info-blog .header-info-blog-dropdown .b:hover span::after{
+    width: 87px;
     transition: 0.5s;
-} 
+}
 
-.header-info-blog-dropdown-celebrity:hover .header-info-underline-blog::after{
-    width: 86px;
+.header-info .header-info-blog .header-info-blog-dropdown .c:hover span::after{
+    width: 117px;
     transition: 0.5s;
-} 
+}
 
-.header-info .header-info-blog:hover .header-info-blog-dropdown::before{
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
+.header-info-blog:hover .header-info-blog-dropdown div {
+    display: block;
 }
 
 .header-info .header-info-contact:hover p::after{
@@ -334,6 +325,7 @@ input{
     margin-right: 4.25%;
     text-align: center;
     padding: 20px;
+    overflow: hidden;
 }
 
 .welcome-section2{
@@ -347,6 +339,7 @@ input{
     margin-right: 4.25%;
     text-align: center;
     padding: 20px;
+    overflow: hidden;
 }
 
 .welcome-section3{
@@ -360,6 +353,7 @@ input{
     margin-right: 4.25%;
     text-align: center;
     padding: 20px;
+    overflow: hidden;
 }
 
 .welcome-sections div i{
@@ -388,7 +382,7 @@ input{
     width: 100%;
 }
 
-.welcome-overlay::before{
+.welcome-overlay::after{
     position: absolute;
     content: "";
 
@@ -396,23 +390,25 @@ input{
     left: 0;
     height: 0;
     width: 0;
-    color: rgb(85, 7, 37, 0.4);
+    background-color: rgb(85, 7, 37, 0.4);
+    margin: -21px;
+    border-radius: 10px;
 }
 
-.welcome-section1:hover .welcome-overlay::before{
-    height: 100%;
-    width: 100%;
-    transition: 2s;
+.welcome-section1:hover .welcome-overlay::after{
+    width: 302px;
+    height: 200px;
+    transition: 1s;
 }
 
-.welcome-section2:hover .welcome-overlay::before{
-    height: 100%;
-    width: 100%;
-    transition: 2s;
+.welcome-section2:hover .welcome-overlay::after{
+    width: 302px;
+    height: 200px;
+    transition: 1s;
 }
 
-.welcome-section3:hover .welcome-overlay::before{
-    height: 100%;
-    width: 100%;
-    transition: 2s;
+.welcome-section3:hover .welcome-overlay::after{
+    width: 302px;
+    height: 200px;
+    transition: 1s;
 }
