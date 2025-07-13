@@ -378,11 +378,10 @@ input{
 
 .welcome-overlay{
     position: relative;
-    height: 100%;
-    width: 100%;
+    z-index: 1;
 }
 
-.welcome-overlay::after{
+.welcome-overlay::before{
     position: absolute;
     content: "";
 
@@ -390,25 +389,86 @@ input{
     left: 0;
     height: 0;
     width: 0;
-    background-color: rgb(85, 7, 37, 0.4);
+    background-color: rgba(141, 11, 61, 0.4);
     margin: -21px;
     border-radius: 10px;
+    z-index: -1;
 }
 
-.welcome-section1:hover .welcome-overlay::after{
+.welcome-section1:hover .welcome-overlay::before{
     width: 302px;
     height: 200px;
     transition: 1s;
 }
 
-.welcome-section2:hover .welcome-overlay::after{
+.welcome-section1:hover p{
+    color: black;
+    transition: 1s;
+}
+
+.welcome-section1:hover .welcome-read-more{
+    color: rgb(189, 34, 86);
+    transition: 1s;
+}
+
+.welcome-section1:hover i{
+    color: rgb(189, 34, 86);
+    transition: 1s;
+}
+
+.welcome-section1:hover h2{
+    color: white;
+    transition: 1s;
+}
+
+.welcome-section2:hover .welcome-overlay::before{
     width: 302px;
     height: 200px;
     transition: 1s;
 }
 
-.welcome-section3:hover .welcome-overlay::after{
+.welcome-section2:hover p{
+    color: black;
+    transition: 1s;
+}
+
+.welcome-section2:hover .welcome-read-more{
+    color: rgb(189, 34, 86);
+    transition: 1s;
+}
+
+.welcome-section2:hover i{
+    color: rgb(189, 34, 86);
+    transition: 1s;
+}
+
+.welcome-section2:hover h2{
+    color: white;
+    transition: 1s;
+}
+
+.welcome-section3:hover .welcome-overlay::before{
     width: 302px;
     height: 200px;
+    transition: 1s;
+}
+
+.welcome-section3:hover p{
+    color: black;
+    transition: 1s;
+}
+
+.welcome-section3:hover .welcome-read-more{
+    color: rgb(189, 34, 86);
+    transition: 1s;
+}
+
+.welcome-section3:hover i{
+    color: rgb(189, 34, 86);
+    transition: 1s;
+}
+
+.welcome-section3:hover h2{
+    color: white;
     transition: 1s;
 }
