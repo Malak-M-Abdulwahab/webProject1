@@ -472,3 +472,76 @@ input{
     color: white;
     transition: 1s;
 }
+
+/* ////////////////////////// wELCOMES /////////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+/* ////////////////////////// FEATURED /////////////////////////// */
+
+.featured{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 233, 236);
+    padding: 0 100px;
+}
+
+.featured-header{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding-top: 40px;
+}
+
+.featured-underline{
+    height: 3px;
+    width: 100px;
+    margin: auto;
+    background-color: palevioletred;
+}
+
+.featured-container{
+    width: 100%;
+    height:500px;
+    margin: 20px 0;
+    position: relative;
+    overflow: auto;
+}
+
+.featured-container-top{
+    width: 80%;
+    height: 50%;
+    margin: auto;
+}
+
+.featured-container-bottom{
+    width: 80%;
+    height: 50%;
+    margin: auto;
+}
+
+.featured-container-top div{
+    height: 80%;
+    margin-top: 2%;
+    width: 25%;
+    margin-right: 12.5%;
+    background-color: aliceblue;
+    display: inline;
+    float: left;
+}
+
+.featured-container-top .featured-image3{
+    margin-right: 0px;
+}
+
+.featured-container-bottom div{
+    height: 80%;
+    margin-top: 2%;
+    width: 25%;
+    margin-right: 12.5%;
+    background-color: aliceblue;
+    display: inline;
+    float: left;
+}
+
+.featured-container-bottom .featured-image6{
+    margin-right: 0px;
+}
