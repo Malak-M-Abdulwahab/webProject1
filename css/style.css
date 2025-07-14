@@ -641,6 +641,7 @@ input{
     width: 100%;
     height: 100vh;
     padding: 0 100px;
+    background-color: white;
 }
 
 .offer-header{
@@ -829,7 +830,7 @@ input{
 }
 
 .choose-img{
-    background-image: url(../images/products2.jpg);
+    background-image: url(../images/products1.jpg);
     width: 350px;
     height: 450px;
     background-size: cover;
@@ -860,3 +861,64 @@ input{
 /* /////////////////////////////////////////////////////////////// */
 /* /////////////////////////// NUMBER //////////////////////////// */
 
+.number{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.number-background{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/underwhychooseus2.jfif);
+    background-attachment: fixed;
+    top: 0;
+    z-index: -2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.number-overlay{
+    background-color: rgba(117, 27, 60, 0.4);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+    padding-top: 4%;
+}
+
+.number-section{
+    padding: 30px;
+    z-index: 2;
+    height: 82.5%;
+    width: 22.5%;
+    float: left;
+    text-align: center;
+}
+
+.number-section i{
+    padding-top: 65px;
+    font-size: 40px;
+    color: pink;
+}
+
+.number-section-number{
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.number-section-title{
+    color: white;
+}
+
+/* ///////////////////////// END NUMBER ////////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+/* ////////////////////////// PRICING //////////////////////////// */
+
+.pricing{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
