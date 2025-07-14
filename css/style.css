@@ -722,19 +722,6 @@ input{
     margin-left: -2px;
 }
 
-.offer-overlay h2{
-    padding-top: 35px;
-    color: rgb(229, 229, 229);
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.offer-overlay p{
-    padding-top: 20px;
-    color: rgb(255, 255, 255);
-    
-}
-
 .offer-overlay i{
     margin-top: 20px;
     padding-top: 5px;
@@ -745,6 +732,21 @@ input{
     width: 32px;
     border-radius: 5px;
     cursor: pointer;
+    display: inline;
+}
+
+.offer-overlay h2{
+    padding-top: 35px;
+    color: rgb(229, 229, 229);
+    font-size: 30px;
+    font-weight: bold;
+    display: inline;
+}
+
+.offer-overlay p{
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+    
 }
 
 .offer1:hover .offer-overlay{
