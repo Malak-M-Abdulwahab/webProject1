@@ -767,3 +767,96 @@ input{
     padding-top: 10px;
     padding-right: 30px;
 }
+
+/* ////////////////////////// END OFFER ////////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+/* /////////////////////////// CHOOSE //////////////////////////// */
+
+.choose{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.choose-left{
+    float: left;
+    width: 60%;
+    height: 100%;
+    padding-left: 150px;
+}
+
+.choose-right{
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.choose-header{
+    padding-top: 90px;
+    font-size: 40px;
+}
+
+.choose-underline{
+    width: 70px;
+    height: 3px;
+    background-color: palevioletred;
+    margin-top: 10px;
+}
+
+.choose-p{
+    color: rgb(155, 155, 155);
+    padding-top: 40px;
+    font-size: 15px;
+}
+
+.choose-checkline i{
+    float: left;
+    color: palevioletred;
+}
+
+.choose-checkline p{
+    float: left;
+    color: gray;
+}
+
+.choose-checkline{
+    width: 100%;
+    height: 50px;
+}
+
+.choose-checkline1{
+    margin-top: 40px;
+}
+
+.choose-img{
+    background-image: url(../images/products2.jpg);
+    width: 350px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.choose-dots{
+    padding-left: 150px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.choose-dot{
+    padding-right: 10px;
+    color: pink;
+}
+
+.choose-dot-hover{
+    color: rgb(155, 155, 155);
+}
+
+.choose-dot-hover:hover{
+    color: pink;
+}
+
+/* ///////////////////////// END CHOOSE ////////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+/* /////////////////////////// NUMBER //////////////////////////// */
+
