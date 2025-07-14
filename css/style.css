@@ -708,7 +708,7 @@ input{
     height: 100%;
     z-index: -1;
 
-    margin-top: -106px;
+    margin-top: 0px;
 }
 
 .offer-overlay::before{
@@ -729,21 +729,41 @@ input{
     transition: 0.5s;
 }
 
+.offer-item .div1{
+    float: left;
+    width: 15%;
+    height: 100%;
+    text-align: right;
+}
+
+.offer-item .div2{
+    float: left;
+    width: 85%;
+    height: 100%;
+    text-align: left;
+}
+
 .offer-item i{
     color: palevioletred;
-    font-size: 20px;
+    font-size: 30px;
     border-radius: 5px;
     cursor: pointer;
-    display: inline;
+    padding-top: 20px;
+    padding-right: 5px;
 }
 
 .offer-item h2{
     color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
-    display: inline;
+    padding-top: 20px;
+    padding-right: 30px;
 }
 
 .offer-item p{
-    color: rgb(202, 202, 202);
+    color: rgb(142, 142, 142);
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-right: 30px;
 }
