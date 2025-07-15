@@ -1124,7 +1124,7 @@ input{
 
 .team{
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     background-color: white;
 }
 
@@ -1257,3 +1257,154 @@ input{
 /* /////////////////////////////////////////////////////////////// */
 /* //////////////////////////// NEWS ///////////////////////////// */
 
+.news{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.news-header{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+}
+
+.news-underline{
+    height: 3px;
+    width: 100px;
+    margin: auto;
+    background-color: palevioletred;
+}
+
+.news-sections{
+    margin: auto;
+    width: 80%;
+    overflow: auto;
+    margin-top: 50px;
+}
+
+.news-section{
+    width: 27.5%;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid palevioletred;
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 3.25%;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.news-section2{
+    height: 520px;
+}
+
+.news-overlay{
+    position: relative;
+    z-index: 1;
+}
+
+.news-overlay::before{
+    position: absolute;
+    content: "";
+
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 400px;
+    background-color: rgba(250, 90, 152, 0.4);
+    margin: -21px;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.news-section:hover .news-overlay::before{
+    width: 400px;
+    height: 520px;
+}
+
+.news-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.news-img1{
+    background-image: url(../images/team6.jfif);
+    background-position: top;
+    background-size: cover;
+}
+
+.news-img2{
+    background-image: url(../images/team9.jfif);
+    background-position: top;
+    background-size: cover;
+}
+
+.news-img3{
+    background-image: url(../images/team8.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+
+.news-socialmedias{
+    overflow: auto;
+    margin: auto;
+}
+
+.news-socialmedia{
+    float: left;
+    margin: 25px 20px;
+}
+
+.news-socialmedia i{
+    display: inline;
+    cursor: pointer;
+    color: palevioletred
+}
+
+.news-socialmedia p{
+    display: inline;
+}
+
+.news-section:hover p{
+    color: rgb(211, 30, 90);
+}
+
+.news-job{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.news-section:hover .news-job{
+    color: white;
+}
+
+.news-article{
+    color: gray;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.news-section:hover .news-article{
+    color: rgb(211, 30, 90);
+}
+
+.news-readmore{
+    cursor: pointer;
+    color: rgb(211, 54, 106);
+}
+
+/* /////////////////////////// END NEWS ////////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+/* /////////////////////////// FOOTER //////////////////////////// */
+
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: pink;
+}
