@@ -693,8 +693,26 @@ input{
     display: inline;
     float: left;
     overflow: hidden;
-    z-index: 10;
+    z-index: 1;
     position: relative;
+}
+
+.offer-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: rgba(211, 58, 109, 0.5);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.offer-item:hover::before {
+    width: 100%;
+    height: 100%;
+        transition: 0.5s;
 }
 
 .offer-container-top .offer3{
@@ -703,35 +721,6 @@ input{
 
 .offer-container-bottom .offer6{
     margin-right: 0px;
-}
-
-.offer-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    
-}
-
-.offer-overlay::after{
-    position: absolute;
-    content: "";
-    
-    width: 0;
-    height: 0;
-    top: 0;
-    left: 0;
-    background-color: rgba(211, 58, 109, 0.5);
-    border-radius: 10px;
-    z-index: -1;
-}
-
-.offer-item:hover .offer-overlay::after{
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
 }
 
 .offer-item .div1{
@@ -757,6 +746,10 @@ input{
     padding-right: 5px;
 }
 
+.offer-item:hover i{
+    color: rgb(205, 41, 96);
+}
+
 .offer-item h2{
     color: rgb(0, 0, 0);
     font-size: 25px;
@@ -765,12 +758,20 @@ input{
     padding-right: 30px;
 }
 
+.offer-item:hover h2{
+    color: rgb(205, 41, 96);
+}
+
 .offer-item p{
     color: rgb(142, 142, 142);
     font-size: 16px;
     font-weight: bold;
     padding-top: 10px;
     padding-right: 30px;
+}
+
+.offer-item:hover p{
+    color: rgb(0, 0, 0);
 }
 
 /* ////////////////////////// END OFFER ////////////////////////// */
