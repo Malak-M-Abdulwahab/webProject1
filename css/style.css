@@ -27,6 +27,7 @@ body{
     margin-top: 12.5px;
     float: left;
     color: white;
+    cursor: pointer;
 }
 
 .header-info{
