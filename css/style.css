@@ -6,7 +6,7 @@
 }
 
 body{
-    height: 4500px;
+    height: 1000vh;
 }
 
 /* /////////////////////////////////////////////////////////////// */
@@ -921,7 +921,7 @@ input{
 
 .pricing{
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     background-color: white;
 }
 
@@ -1026,3 +1026,98 @@ input{
 .pricing-section:hover .pricing-section-header{
     color: rgb(214, 70, 118);
 }
+
+/* ///////////////////////// END PRICING ///////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+/* ////////////////////////// EMPLOYERS ////////////////////////// */
+
+.employers{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.employers-background{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/underwhychooseus.jpg);
+    background-attachment: fixed;
+    top: 0;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.employers-overlay{
+    background-color: rgba(117, 27, 60, 0.4);
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+    padding-top: 4%;
+}
+
+.employers-section{
+    padding: 30px;
+    height: 82.5%;
+    width: 40%;
+    float: left;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.employers-info{
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    height: 140px;
+    padding-top: 40px;
+}
+
+.employers-img1{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-image: url(../images/team1.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+.employers-img2{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-image: url(../images/team2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.employers-namejob{
+    float: left;
+    width: 200px;
+    height: 80px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.employers-name{
+    font-size: 30px;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.employers-job{
+    font-size: 20px;
+    color: rgb(126, 12, 50);
+}
+
+.employers-section-p{
+    text-transform: capitalize;
+    line-height: 21px;
+    word-spacing: 2px;
+}
+
+/* //////////////////////// END EMPLOYERS //////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+/* //////////////////////////// TEAM ///////////////////////////// */
